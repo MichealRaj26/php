@@ -34,6 +34,17 @@ A server-side scripting language runs on the web server, not in the user's brows
 - **PHP 8**: Released in 2020; introduced the Just-In-Time (JIT) compiler for better performance, union types, named arguments, attributes (annotations), match expressions, and improvements to error handling. PHP 8 also added constructor property promotion and enhanced type system features.
 - **PHP 8.2**: Released in December 2022; introduced readonly classes, true type for constants, deprecated dynamic properties, new `disjunctive normal form` types, and performance improvements. PHP 8.2 also enhanced enums and added new functions and deprecations.
 
+**LAMP** stands for **Linux, Apache, MySQL, and PHP**. It is a popular stack of open-source software used to run dynamic websites and web applications. Each component serves a specific purpose:
+
+- **Linux**: The operating system.
+- **Apache**: The web server software.
+- **MySQL**: The database management system.
+- **PHP**: The server-side scripting language.
+
+Together, these technologies provide a robust environment for developing and deploying web applications.
+
+
 ---
+
 
 Feel free to explore the code and contribute!
