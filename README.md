@@ -42,7 +42,43 @@ A server-side scripting language runs on the web server, not in the user's brows
 - **PHP**: The server-side scripting language.
 
 Together, these technologies provide a robust environment for developing and deploying web applications.
+## What is CSRF?
 
+**CSRF** (Cross-Site Request Forgery) is a web security vulnerability where an attacker tricks a user's browser into performing unwanted actions on a different website where the user is authenticated.
+
+### Example Scenario
+
+Suppose you are logged into your bank account in one browser tab. In another tab, you visit a malicious website. That site can attempt to send a request to your bank (such as transferring money) without your knowledge. Since you are already logged in, the bank may process the request, believing it came from you.
+
+### How Laravel Prevents CSRF
+
+Laravel protects against CSRF by adding a unique token to every form:
+
+```html
+<input type="hidden" name="_token" value="some-random-code">
+```
+
+When the form is submitted, Laravel checks if the token is valid and if the request originated from your site. If the token is missing or invalid, Laravel blocks the request, preventing CSRF attacks.
+
+**In summary:**  
+CSRF is like someone forging your signature while you are logged in. Laravel prevents this by requiring a secret code (token) with each form submission—only your website can generate and verify this code.
+
+
+## Refined Explanation of CSRF
+
+CSRF is a web attack where you log in to a trusted site (let’s call it Web A) in one tab, and then unknowingly open a malicious site (Web B) in another tab.
+
+The malicious site (Web B) can secretly try to send a request to Web A (such as transferring money or changing your password), using your active login session.
+
+To prevent this, Web A uses a CSRF token—a secret value included in all forms or requests.
+
+When the form is submitted, Web A checks if the token is correct:
+
+- ✅ If it's valid, the request is allowed.
+- ❌ If it's invalid or missing, the request is blocked.
+
+**One-line Summary:**  
+CSRF is like someone else sending commands using your login. The CSRF token proves it was really you who sent the request.
 
 ---
 
