@@ -11,7 +11,6 @@ Welcome to the PHP project!
 A server-side scripting language runs on the web server, not in the user's browser. This approach allows the server to process requests, manage data, and generate customized content before sending the final output to the client's browser.
 
 
-
 ---
 
 Feel free to explore the code and contribute!
