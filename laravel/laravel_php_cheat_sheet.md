@@ -1,6 +1,41 @@
 
 # Laravel PHP Cheat Sheet for Interview
 
+## Create Project Procedure
+
+1. **Install Laravel via Composer:**
+    ```bash
+    composer create-project laravel/laravel project-name
+    ```
+
+    - To create a Laravel project with a specific version, use:
+        ```bash
+        composer create-project laravel/laravel project-name "10.*"
+        ```
+      Replace `"10.*"` with your desired Laravel version.
+
+2. **Set Up Environment:**
+    - Copy `.env.example` to `.env`
+    - Configure database and other settings in `.env`
+
+3. **Generate Application Key:**
+    ```bash
+    php artisan key:generate
+    ```
+
+4. **Run Migrations:**
+    ```bash
+    php artisan migrate
+    ```
+
+5. **Start Development Server:**
+    ```bash
+    php artisan serve
+    ```
+
+6. **Access Application:**
+    - Open [http://localhost:8000](http://localhost:8000) in your browser.
+
 ## 1. Routing (`web.php`)
 
 ```php
