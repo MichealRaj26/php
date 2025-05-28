@@ -6,7 +6,6 @@ Welcome to the PHP project!
 
 **PHP** (Hypertext Preprocessor) is a popular server-side scripting language designed for web development. It enables you to create dynamic web pages, interact with databases, and handle user input efficiently. 
 
-
 ### Founded By
 
 PHP was created by Rasmus Lerdorf.
@@ -28,3 +27,4 @@ A server-side scripting language runs on the web server, not in the user's brows
 ---
 
 Feel free to explore the code and contribute!
+
