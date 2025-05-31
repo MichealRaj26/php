@@ -1,5 +1,19 @@
 # Laravel API Guide
 
+> **Note:**  
+> If you are working with `api.php` in a custom Laravel setup (such as Lumen), you may need to register your API routes in `bootstrap/app.php`:
+>
+> ```php
+> $app->router->group([
+>     'namespace' => 'App\Http\Controllers\Api',
+> ], function ($router) {
+>     require __DIR__.'/../routes/api.php';
+> });
+> ```
+>
+> Adjust the path as needed for your project structure.
+
+
 ## 1. Set Up API Routes
 
 In `routes/api.php`, add:
