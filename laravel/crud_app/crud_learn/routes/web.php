@@ -9,3 +9,4 @@ Route::post('/basic-crud', [BasicCrudController::class, 'store'])->name('basic_c
 Route::get('/basic-crud/edit/{id}', [BasicCrudController::class, 'edit'])->name('basic_crud.edit');
 Route::put('/basic-crud/{id}', [BasicCrudController::class, 'update'])->name('basic_crud.update');
 Route::get('/basic-crud/{id}', [BasicCrudController::class, 'destroy'])->name('basic_crud.delete');
+Route::get('/basic-crud/show/{id}', [BasicCrudController::class, 'show'])->name('basic_crud.show');

@@ -14,7 +14,6 @@ class BasicCrudController extends Controller
         $users = BasicCrud::all();
 
         return view('basic_crud.index', compact('users'));
-
     }
 
     /**
@@ -54,7 +53,9 @@ class BasicCrudController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $basicCrud = BasicCrud::findOrFail($id);
+
+        return view('basic_crud.show', compact('basicCrud'));
     }
 
     /**

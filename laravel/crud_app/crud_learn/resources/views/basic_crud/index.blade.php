@@ -34,6 +34,8 @@
                                         Edit
                                     </a>
 
+                                    <a href="{{ route('basic_crud.show', $user->id) }}" class="btn btn-secondary">Show</a>
+
                                     <a href="{{ route('basic_crud.delete', $user->id) }}" class="btn btn-danger"
                                         onclick="return confirm('are you sure?')">
                                         Delete
